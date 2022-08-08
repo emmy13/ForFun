@@ -1,0 +1,771 @@
+<html>
+    <head>
+        <title>For Fun</title>
+        <link rel="stylesheet" href="bootstrap_5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="forFunC.css">
+        <link rel="stylesheet" href="FontAwesome/css/all.min.css">
+    </head>
+    <body onload="normalMode()">
+        <div class="toTop"><a href="#top"><i class="fa-solid fa-angles-up"></i></a></div>
+        <div class="beginning container-fluid text-center py-4 mb-5" id="top">
+            <h1>For Fun Ideas And Tests</h1>
+        </div>
+        <!--Hover Cards-->
+        <div class="container mb-5">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="holder">
+                        <div class="holderImg">
+    
+                        </div>
+                        <div class="holderText text-center py-3 px-4">
+                            <h5>Some Text Heading</h5>
+                            <p style="font-size: 15px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, beatae saepe.</p>
+                        </div>
+                        <div class="holderAnimation">
+    
+                        </div>
+                    </div>  
+                </div>
+                <div class="col-lg-4">
+                    <div class="hold">
+                        <div class="holderImg">
+    
+                        </div>
+                        <div class="holderText text-center py-3 px-4">
+                            <h5>Some Text Heading</h5>
+                            <p style="font-size: 15px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, beatae saepe.</p>
+                        </div>
+                        <div class="container-fluid p-0 m-0">
+                            <div class="row">
+                                <div class="col-6 m-0">
+                                    <div class="holdAnimation1">
+
+                                    </div>
+                                </div>
+                                <div class="col-6 m-0">
+                                    <div class="holdAnimation2">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="col-lg-4">
+                    <div class="holder">
+                        <div class="holderImg">
+    
+                        </div>
+                        <div class="holderText text-center py-3 px-4">
+                            <h5>Some Text Heading</h5>
+                            <p style="font-size: 15px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit, beatae saepe.</p>
+                        </div>
+                        <div class="holderAnimation">
+    
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+        <!--FLoating COntent-->
+        <div class="container" style="margin-top: 100px;">
+            <div class="floatingCont container-fluid">
+                <div class="floatingImg">
+                    <div class="floating"></div>
+                    <div class="floatingShadow"></div>
+                </div>
+                <div class="floatingText text-center">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa aspernatur delectus at officiis adipisci rerum veritatis eaque recusandae porro assumenda nesciunt placeat, dolorem saepe sunt repudiandae corrupti nisi quis pariatur.</p>
+                </div>
+                <div class="floatingAnimation">
+
+                </div>
+            </div>
+        </div>
+        <!--Moving Columns-->
+        <div class="columnCont container-fluid my-5">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="movingCont col-1" id="moving">
+                        <div class="movingCol"></div>
+                    </div>
+                    <div class="movingCont col-1">
+                        <div class="movingCol" style="animation-delay: 0.5s;"></div>
+                    </div>
+                    <div class="movingCont col-1">
+                        <div class="movingCol" style="animation-delay: 1.5s;"></div>
+                    </div>
+                    <div class="movingCont col-1">
+                        <div class="movingCol" style="animation-delay: 2.5s;"></div>
+                    </div>
+                    <div class="movingCont col-1">
+                        <div class="movingCol" style="animation-delay: 3s;"></div>
+                    </div>
+                    <div class="movingCont col-1">
+                        <div class="movingCol" style="animation-delay: 4s;"></div>
+                    </div>
+                    <div class="movingCont col-1">
+                        <div class="movingCol" style="animation-delay: 5s;"></div>
+                    </div>
+                    <div class="movingCont col-1">
+                        <div class="movingCol" style="animation-delay: 6s;"></div>
+                    </div>
+                    <div class="movingCont col-1">
+                        <div class="movingCol" style="animation-delay: 7s;"></div>
+                    </div>
+                    <div class="movingCont col-1">
+                        <div class="movingCol" style="animation-delay: 8s;"></div>
+                    </div>
+                    <div class="movingCont col-1">
+                        <div class="movingCol" style="animation-delay: 9s;"></div>
+                    </div>
+                    <div class="movingCont col-1">
+                        <div class="movingCol" style="animation-delay: 10s;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="movingBtn container">
+            <button type="button" onclick="playCol()">Play</button>
+            <button type="button" onclick="pauseCol()">Pause</button>
+        </div>
+        <script>
+            function pauseCol() {
+              var docs =  document.getElementsByClassName('movingCol');
+                for (const doc of docs) {
+                    doc.style.animationPlayState = "paused"
+                }
+            }
+            function playCol() {
+              var docs =  document.getElementsByClassName('movingCol');
+                for (const doc of docs) {
+                    doc.style.animationPlayState = "running"
+                }
+            }
+        </script>
+        <div class="snowCont container mb-5">
+            <div class="snowText">
+                <h1 style="font-size: 100px; font-family: Atkinson; font-weight: 700;">Falling Snow</h1>
+            </div>
+            <div class="snow" style="left: 10%; animation-delay: 13s;"></div>
+            <div class="snow" style="left: 20%; animation-delay: 3s;"></div>
+            <div class="snow" style="left: 30%; animation-delay: 8s;"></div>
+            <div class="snow" style="left: 45%; animation-delay: 10s;"></div>
+            <div class="snow" style="left: 58%; animation-delay: 1s;"></div>
+            <div class="snow" style="left: 65%; animation-delay: 15s;"></div>
+            <div class="snow" style="left: 75%; animation-delay: 5s;"></div>
+            <div class="snow" style="left: 90%; animation-delay: 18s;"></div>
+            <!--Slower Snow-->
+            <div class="slowSnow" style="left: 15%; animation-delay: 10s;"></div>
+            <div class="slowSnow" style="left: 29%; animation-delay: 14s;"></div>
+            <div class="slowSnow" style="left: 35%; animation-delay: 4s;"></div>
+            <div class="slowSnow" style="left: 40%; animation-delay: 8s;"></div>
+            <div class="slowSnow" style="left: 49%; animation-delay: 3s;"></div>
+            <div class="slowSnow" style="left: 62%; animation-delay: 12s;"></div>
+            <div class="slowSnow" style="left: 78%; animation-delay: 2s;"></div>
+            <div class="slowSnow" style="left: 83%; animation-delay: 18s;"></div>
+            <div class="slowSnow" style="left: 89%; animation-delay: 17s;"></div>
+            <div class="slowSnow" style="left: 95%; animation-delay: 1s;"></div>
+
+            <div class="slowSnow" style="left: 10%; animation-delay: 20s;"></div>
+            <div class="slowSnow" style="left: 30%; animation-delay: 24s;"></div>
+            <div class="slowSnow" style="left: 39%; animation-delay: 28s;"></div>
+            <div class="slowSnow" style="left: 46%; animation-delay: 30s;"></div>
+            <div class="slowSnow" style="left: 50%; animation-delay: 33s;"></div>
+            <div class="slowSnow" style="left: 68%; animation-delay: 38s;"></div>
+            <div class="slowSnow" style="left: 74%; animation-delay: 22s;"></div>
+            <div class="slowSnow" style="left: 79%; animation-delay: 36s;"></div>
+            <div class="slowSnow" style="left: 88%; animation-delay: 38s;"></div>
+            <div class="slowSnow" style="left: 90%; animation-delay: 19s;"></div>
+        </div>
+        <div class="messCont container mb-5 pt-5">
+            <div class="messUp">
+                <div class="messUpEye">
+                    <div class="eye">
+                        <div class="pupil"></div>
+                    </div>
+                </div>
+                <div class="messText">
+                    <h6 class="text-center">You Get One Shot</h6>
+                    <h2 class="text-center">Don't Mess Up!</h2>
+                    <div class="messRest mt-5">
+                        <div class="bottom"><input type="text" placeholder="What Do We Call You ?"></div>
+                        <div class="bottom"><input type="password" placeholder="What's The Password ?"></div>
+                        <button type="button">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Calculator -->
+        <div class="calcCont container my-3">
+            <div class="wholeCalc">
+                <div class="px-4">
+                    <div class="display">
+                        <p id="prevDisplay" class="prevDisplayBox"></p>
+                        <p id="display" class="displayBox"></p>
+                    </div>
+                </div>
+                <div class="calculator px-4">
+                    <div class="numbers">
+                        <div class="container-fluid p-0">
+                            <div class="row g-0">
+                                <div class="col-3">
+                                    <button class="num" onclick="remove()">C</button>
+                                </div>
+                                <div class="col-3">
+                                    <button class="num" onclick="display('**')">^</button>
+                                </div>
+                                <div class="col-3">
+                                    <button class="num" onclick="display('%')">%</button>
+                                </div>
+                                <div class="col-3">
+                                    <button class="num">SQR</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-fluid p-0">
+                            <div class="row g-0">
+                                <div class="col-3">
+                                    <button class="num" onclick="display(7)">7</button>
+                                </div>
+                                <div class="col-3">
+                                    <button class="num" onclick="display(8)">8</button>
+                                </div>
+                                <div class="col-3">
+                                    <button class="num" onclick="display(9)">9</button>
+                                </div>
+                                <div class="col-3">
+                                    <button class="num" onclick="display('/')">/</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-fluid p-0">
+                            <div class="row g-0">
+                                <div class="col-3">
+                                    <button class="num" onclick="display(4)">4</button>
+                                </div>
+                                <div class="col-3">
+                                    <button class="num" onclick="display(5)">5</button>
+                                </div>
+                                <div class="col-3">
+                                    <button class="num" onclick="display(6)">6</button>
+                                </div>
+                                <div class="col-3">
+                                    <button class="num" onclick="display('*')">X</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-fluid p-0">
+                            <div class="row g-0">
+                                <div class="col-3">
+                                    <button class="num" onclick="display(1)">1</button>
+                                </div>
+                                <div class="col-3">
+                                    <button class="num" onclick="display(2)">2</button>
+                                </div>
+                                <div class="col-3">
+                                    <button class="num" onclick="display(3)">3</button>
+                                </div>
+                                <div class="col-3">
+                                    <button class="num" onclick="display('-')">-</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-fluid p-0">
+                            <div class="row g-0">
+                                <div class="col-3">
+                                    <button class="num" onclick="clearScreen()">AC</button>
+                                </div>
+                                <div class="col-3">
+                                    <button class="num" onclick="display(0)">0</button>
+                                </div>
+                                <div class="col-3">
+                                    <button class="num" onclick="display('.')">.</button>
+                                </div>
+                                <div class="col-3">
+                                    <button class="num" onclick="display('+')">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-4">
+                    <button class="calc" onclick="calc()">=</button>
+                </div>
+            </div>
+        </div>
+        <div class="goldbg container">
+            <div class="gold container-fluid"></div>
+        </div>
+        <!-- Hot Poster -->
+        <div class="posterCont container my-3 py-5">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="poster">
+                        <div class="posterHot text-center"><p>Hot</p></div>
+                        <img src="images/suit.png" alt="suit" width="200px">
+                        <div class="posterText text-center">
+                            <h1>Premium Business Suit</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus quo est at non, natus, voluptas soluta deserunt temporibu.</p>
+                            <div class="posterLink">
+                                <a href="#" class="addTo">
+                                    <p style="font-size: 12px; line-height: 1.8;">Add To Cart</p>
+                                </a>
+                                <div class="add"><p>+</p></div>
+                                <p style="font-size: 14px;">$2,000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="menu">
+                        <div class="menuDiamond">
+                            <div class="diamondText">
+                                <i class="fa-solid fa-sack-dollar ms-1"></i>
+                            </div>
+                        </div>
+                        <div class="menuText text-center">
+                            <h1>Premium Service</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Clock -->
+        <div class="clockCont">
+            <div class="clock" id="clockCont">
+                <div class="clockCircle">
+                    <div class="clockTwelve"></div>
+                    <div class="clockThree"></div>
+                    <div class="clockSix"></div>
+                    <div class="clockNine"></div>
+    
+                    <!--Other Hands-->
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="four"></div>
+                    <div class="five"></div>
+                    <div class="seven"></div>
+                    <div class="eight"></div>
+                    <div class="ten"></div>
+                    <div class="eleven"></div>
+    
+                    <div class="clockPoint"></div>
+                    <div class="hourHand" id="hourHand"></div>
+                    <div class="minuteHand" id="minuteHand"></div>
+                    <div class="secondHand" id="secondHand"></div>
+                </div>
+                <div class="toggleMode" onclick="toggleMode()"><i class="fa-solid fa-sun" id="clockIcon"></i></div>
+                <div class="clockText">
+                    <div><p><span class="textHour" id="textHour"></span><span class="textMinute" id="textMinute"></span><span class="textSecond" id="textSecond"></span></p></div>
+                    <div class="textAmpm" id="textAmpm"></div>
+                </div>
+                <div class="clockDate">
+                    <span class="dateDay" id="dateDay"></span>
+                    <span class="dateMonth" id="dateMonth"></span>
+                    <span class="dateYear" id="dateYear"></span><br>
+                    <span class="weekDay" id="weekDay"></span>
+                </div>
+            </div>
+            <div class="clockBigText">
+                <h1>Moving<br>Clock</h1>
+            </div>
+        </div>
+
+        <!--Scientific Calculator-->
+        <div class="scientificCalculator">
+            <div class="scientificCalc">
+                <div class="scientificDisplay">
+                    <p id="sciPrevDisplay" class="sciPrevDisplayBox text-wrap"></p>
+                    <p id="sciDisplay" class="sciDisplayBox"></p>
+                </div>
+                <div class="scientificNumbers">
+                    <div class="changeMode py-2">
+                        <button type="button" class="active" onclick="normalMode()" id="scientificNorm">NORMAL</button>
+                        <button type="button" class="ms-3" onclick="scientificMode()" id="scientificSci">SCIENTIFIC</button>
+                    </div>
+                    <div class="scientificCalculations">
+                        <div class="scientificCol">
+                            <button class="scientificDisable" onclick="absoluteVal()">Abs</button>
+                        </div>
+                        <div class="scientificCol">
+                            <button class="scientificDisable" onclick="scientificDisplay('cube')">x<sup>3</sup></button>
+                        </div>
+                        <div class="scientificCol">
+                            <button class="scientificBrain" disabled><i class="fa-solid fa-brain"></i></button>
+                        </div>
+                        <div class="scientificCol">
+                            <button class="scientificDisable" onclick="scientificDisplay('square')">x<sup>2</sup></button>
+                        </div>
+                        <div class="scientificCol">
+                            <button class="scientificDisable" onclick="scientificDisplay('any')">x<sup><i class="fa-solid fa-square" id="scientificSquare"></i></sup></button>
+                        </div>
+                        <div class="scientificCol">
+                            <button class="scientificDisable" onclick="scientificDisplay()">♥</button>
+                        </div>
+                        <div class="scientificCol">
+                            <button class="scientificDisable" onclick="scientificDisplay('√')">√</button>
+                        </div>
+                        <div class="scientificCol">
+                            <button class="scientificDisable" onclick="scientificDisplay('bracketOpen')">(</button>
+                        </div>
+                        <div class="scientificCol">
+                            <button class="scientificDisable" onclick="scientificDisplay('bracketClose')">)</button>
+                        </div>
+                        <div class="scientificCol">
+                            <button class="scientificDisable" onclick="scientificDisplay()">In</button>
+                        </div>
+                        <div class="scientificCol">
+                            <button class="scientificDisable" onclick="scientificDisplay()">hyp</button>
+                        </div>
+                        <div class="scientificCol">
+                            <button class="scientificDisable" onclick="scientificDisplay('sin')">sin</button>
+                        </div>
+                        <div class="scientificCol">
+                            <button class="scientificDisable" onclick="scientificDisplay('cos')">cos</button>
+                        </div>
+                        <div class="scientificCol">
+                            <button class="scientificDisable" onclick="scientificDisplay('tan')">tan</button>
+                        </div>
+                        <div class="scientificCol">
+                            <button class="scientificDisable mb-3" onclick="scientificDisplay('log')">log</button>
+                        </div>
+                    </div>
+                    <div class="scientificNums">
+                        <div class="scientificNumCont">
+                            <div class="scientificCol">
+                                <button class="scientificNum" onclick="scientificDisplay(7)">7</button>
+                            </div>
+                            <div class="scientificCol">
+                                <button class="scientificNum" onclick="scientificDisplay(8)">8</button>
+                            </div>
+                            <div class="scientificCol">
+                                <button class="scientificNum" onclick="scientificDisplay(9)">9</button>
+                            </div>
+                            <div class="scientificCol">
+                                <button class="scientificNum" onclick="sciDelete()" ondblclick="sciClear()">DEL</button>
+                            </div>
+                            <div class="scientificCol">
+                                <button class="scientificNum" onclick="sciClearScreen()">AC</button>
+                            </div>
+                            <div class="scientificCol">
+                                <button class="scientificNum" onclick="scientificDisplay(4)">4</button>
+                            </div>
+                            <div class="scientificCol">
+                                <button class="scientificNum" onclick="scientificDisplay(5)">5</button>
+                            </div>
+                            <div class="scientificCol">
+                                <button class="scientificNum" onclick="scientificDisplay(6)">6</button>
+                            </div>
+                            <div class="scientificCol">
+                                <button class="scientificNum" onclick="scientificDisplay('*')">X</button>
+                            </div>
+                            <div class="scientificCol">
+                                <button class="scientificNum" onclick="scientificDisplay('/')">/</button>
+                            </div>
+                            <div class="scientificCol">
+                                <button class="scientificNum" onclick="scientificDisplay(1)">1</button>
+                            </div>
+                            <div class="scientificCol">
+                                <button class="scientificNum" onclick="scientificDisplay(2)">2</button>
+                            </div>
+                            <div class="scientificCol">
+                                <button class="scientificNum" onclick="scientificDisplay(3)">3</button>
+                            </div>
+                            <div class="scientificCol">
+                                <button class="scientificNum" onclick="scientificDisplay('+')">+</button>
+                            </div>
+                            <div class="scientificCol">
+                                <button class="scientificNum" onclick="scientificDisplay('-')">-</button>
+                            </div>
+                            <div class="scientificCol">
+                                <button class="scientificNum" onclick="scientificDisplay(0)">0</button>
+                            </div>
+                            <div class="scientificCol">
+                                <button class="scientificNum" onclick="scientificDisplay('.')">.</button>
+                            </div>
+                            <div class="scientificCol">
+                                <!-- Empty Space -->
+                            </div>
+                            <div class="scientificCol">
+                                <button class="scientificNum" onclick="sciAnswer()">ANS</button>
+                            </div>
+                            <div class="scientificCol">
+                                <button class="scientificNum" onclick="scientificCalc()">=</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sciBigText">
+                <h1>Scientific<br>Calculator</h1>
+            </div>
+        </div>
+        <!--Quiz App-->
+        <div class="quizCont">
+            <div class="quizBox">
+                <div class="quizImg">
+                    <div>
+                        <div class="quizDiffulty" onmouseover="quizOptionOver()" onmouseout="quizOptionOut()" id="quizEasy">
+                            <img src="images/books-1977235_1920.png" alt="books" width="120px">
+                            <div class="quizDiffultyText">
+                                <p><i class="fa-regular fa-circle-check"></i>Easy</p>
+                                <h4>Inexperienced Students</h4>
+                            </div>
+                        </div>
+                        <div class="quizDiffulty" onmouseover="quizOptionOver()" onmouseout="quizOptionOut()">
+                            <img src="images/light-311119_1280.png" alt="books" width="50px" class="ms-3">
+                            <div class="quizDiffultyText">
+                                <p><i class="fa-regular fa-circle-check"></i>Medium</p>
+                                <h4>Average Students</h4>
+                            </div>
+                        </div>
+                        <div class="quizDiffulty" onmouseover="quizOptionOver()" onmouseout="quizOptionOut()">
+                            <img src="images/man-1424877_1280.png" alt="books" width="100px" class="ms-3">
+                            <div class="quizDiffultyText">
+                                <p><i class="fa-regular fa-circle-check"></i>Hard</p>
+                                <h4>Extreme Students</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="quizTextCont">
+                    <div class="quizOpa">
+                        <div class="quizText text-center text-wrap">
+                            <h1>Welcome To Quiz Dimension</h1>
+                            <p>...choose a diffulty.</p>
+                        </div>
+                        <div class="quizOption" id="quizOption">
+                            <div class=""></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="testCont">
+            <div class="testAll">
+                <div class="test">
+                    <div class="wave wave1"></div>
+                    <div class="wave wave2"></div>
+                    <div class="wave wave3"></div>
+                    <div class="testText text-center text-wrap">
+                        <h1>Welcome To Quiz Dimension</h1>
+                        <p>choose a diffulty...</p>
+                    </div>
+                    <div class="testDiffulty">
+                        <div class="testMode">
+                            <div class="testImg"></div>
+                            <div class="testModeText text-center text-wrap">
+                                <h4>Easy Mode</h4>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti consequatur corporis perferendis at, sunt dolor sit ex aliquid magnam</p>
+                            </div>
+                            <button class="testModeBtn" value="Easy">Start</button>
+                        </div>
+                        <div class="testMode">
+                            <div class="testImg"></div>
+                            <div class="testModeText text-center text-wrap">
+                                <h4>Hard Mode</h4>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti consequatur corporis perferendis at, sunt dolor sit ex aliquid magnam</p>
+                            </div>
+                            <button class="testModeBtn" value="Hard">Start</button>
+                        </div>
+                        <div class="testMode">
+                            <div class="testImg"></div>
+                            <div class="testModeText text-center text-wrap">
+                                <h4>Insane Mode</h4>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti consequatur corporis perferendis at, sunt dolor sit ex aliquid magnam</p>
+                            </div>
+                            <button class="testModeBtn" value="Insane">Start</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="testQuestion">
+                    <div class="testQuestionSetting">
+                        <div class="testSettingClose"><i class="fa-solid fa-cancel"></i></div>
+                        <div class="testSettingImg"></div>
+                        <div class="testSettingText">
+                            <h1 class="testChangingText"></h1>
+                            <form class="mt-5">
+                                <div class="row mb-5">
+                                    <div class="col">
+                                        <label for="fir">Name:</label>
+                                        <input type="text" class="form-control testInp" placeholder="First Name" id="fir">
+                                    </div>
+                                    <div class="col">
+                                        <label for="las">Name:</label>
+                                        <input type="text" class="form-control testInp" placeholder="Last Name" id="las">
+                                    </div>
+                                </div>
+                                <div class="row mb-5">
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <label for="sel1">Time Per Question(sec):</label>
+                                            <select class="form-control" id="sel1">
+                                                <option value="none">Select Time</option>
+                                                <option value="5">5</option>
+                                                <option value="10">10</option>
+                                                <option value="15">15</option>
+                                                <option value="20">20</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <label for="sel2">Number Of Questions:</label>
+                                            <select class="form-control" id="sel2">
+                                                <option value="none">Select Number</option>
+                                                <option value="5">5</option>
+                                                <option value="10">10</option>
+                                                <option value="15">15</option>
+                                                <option value="20">20</option>
+                                            </select>
+                                    </div>
+                                </div>
+                            </form>
+                            <button class="testSettingBtn">Start Quiz</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testAnswer">
+                <div class="testNow">
+                    <div class="testBegin">
+                        <div class="testBeginImg"></div>
+                        <div class="testBeginText py-5">
+                            <div class="beginText text-center">
+                                <h1 class="beginTextChangable"></h1><br><br><br>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore possimus voluptate quod veniam, in, et provident repellat error velit assumenda aperiam ipsam molestias fugit harum excepturi, dolores delectus. Sed, nulla.</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis magnam, voluptates quod repellendus minus distinctio molestias doloremque tempora voluptatem. Hic itaque quidem earum ullam excepturi accusantium in quibusdam odit quia.</p>
+                                <br><br>
+                                <button id="cancelTest">Cancel</button>
+                                <button id="beginTest">Begin Quiz</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testOver">
+                    <div class="testTake">
+                        <div class="testTakeLeft"></div>
+                        <div class="testTakeRight"></div>
+    
+                        <div class="testTakeShow">
+                            <div class="testTimerCont">
+                                <div class="testTimerVal"></div>
+                            </div>
+                            <div class="testTakeQuestion">
+                                <h1 class="takeQuestionChangable"></h1>
+                                <p id="takeChangingQuestion"></p>
+                            </div>
+                            <div class="testTakeImg">
+                                <img src="images/burglar-157142.png" alt="img" width="400px">
+                            </div>
+                            <div class="testTakeOption">
+                                <div>
+                                    <button class="optionBtn mt-1">A</button><span class="optionSpan"></span><br>
+                                    <button class="optionBtn">B</button><span class="optionSpan"></span><br>
+                                    <button class="optionBtn">C</button><span class="optionSpan"></span><br>
+                                    <button class="optionBtn">D</button><span class="optionSpan"></span><br>
+                                </div>
+                            </div>
+                            <div class="testTakePage">
+                                <button class="testPage"></button>
+                                <button class="testPage"></button>
+                                <button class="testPage"></button>
+                                <button class="testPage"></button>
+                                <button class="testPage"></button>
+                                <button class="testPage"></button>
+                                <button class="testPage"></button>
+                                <button class="testPage"></button>
+                                <button class="testPage"></button>
+                                <button class="testPage"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testResultCont">
+                        <div class="testResult">
+                            <div class="testResultText">
+                                <div><h1 class="testResultHead"></h1></div>
+                                <div class="testResultStat">
+                                    <div class="testResultLeft">
+                                        <p>Name: <span id="testResName"></span></p>
+                                        <p>Time Per Question: <span>10sec</span></p>
+                                        <p>Number Of Correct Answers: <span id="testCorrect"></span></p>
+                                        <button class="backToMain">Back To Main Menu</button>
+                                    </div>
+                                    <div class="testResultRight">
+                                        <p>Number Of Questions: <span>10</span></p>
+                                        <p>Diffulty: <span id="testResultDiffulty"></span></p>
+                                        <p>Number Of Wrong Answers: <span id="testWrong"></span></p>
+                                        <button>Review Answers</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--SlideShow-->
+        <div class="slideCont">
+            <div class="slideHold">
+                <div class="slideBtn slideBtnFade"><i class="fa-solid fa-angle-left"></i></div>
+                <div class="slideBtn2 slideBtnFade"><i class="fa-solid fa-angle-right"></i></div>
+                <div class="slideBox">
+                    <div class="slideRow">
+                        <div class="slide"><h1>1</h1></div>
+                        <div class="slide" style="left: 35%;"><h1>2</h1></div>
+                        <div class="slide" style="left: 70%;"><h1>3</h1></div>
+                        <div class="slide" style="left: 105%;"><h1>4</h1></div>
+                        <div class="slide" style="left: 140%;"><h1>5</h1></div>
+                        <div class="slide" style="left: 175%;"><h1>6</h1></div>
+                        <div class="slide" style="left: 210%;"><h1>7</h1></div>
+                        <div class="slide" style="left: 245%;"><h1>8</h1></div>
+                        <div class="slide" style="left: 280%;"><h1>9</h1></div>
+                        <div class="slide" style="left: 315%;"><h1>10</h1></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Responsive Navigation Bar-->
+        <nav class="naviBar" id="naviBar">
+            <label class="naviLogo">Snoogle</label>
+            <ul id="naviNav">
+                <li><a href="#naviBar" class="naviLink active">Home</a></li>
+                <li><a href="#naviBar" class="naviLink">About</a></li>
+                <li><a href="#naviBar" class="naviLink">Services</a></li>
+                <li><a href="#naviBar" class="naviLink">Contact</a></li>
+                <li><a href="#naviBar" class="naviLink">Feedback</a></li>
+            </ul>
+            <label id="naviToggle">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+        </nav>
+        <div class="naviBox">
+            <div class="naviBoxText">
+                <h1>Responsive Navigation Bar</h1>
+            </div>
+        </div>
+        <!--Create Account-->
+        <div class="createCont">
+            <div class="createBox">
+                <!-- <button class="createView">View Profile</button> -->
+                <div class="createBorder">
+                    <div class="createCircle">
+                        <div class="createAdd">
+                            <div class="createLoading">
+                                <div class="createDot"></div>
+                                <div class="createDot" style="animation-delay: 0.5s; left: 42%"></div>
+                                <div class="createDot" style="animation-delay: 1s; right: 0;"></div>
+                            </div>
+                            <!-- <i class="fa-solid fa-user-plus"></i>
+                            <p>Create Account</p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="bootstrap_5/jquery/jquery-3.6.0.min.js"></script>
+    <script src="boostrap_5/js/bootstrap.bundle.min.js"></script>
+    <script src="forFunJ.js"></script>
+</html>
