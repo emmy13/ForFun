@@ -749,20 +749,83 @@
         <div class="createCont">
             <div class="createBox">
                 <!-- <button class="createView">View Profile</button> -->
-                <div class="createBorder">
-                    <div class="createCircle">
-                        <div class="createAdd">
-                            <div class="createLoading">
-                                <div class="createDot"></div>
-                                <div class="createDot" style="animation-delay: 0.5s; left: 42%"></div>
-                                <div class="createDot" style="animation-delay: 1s; right: 0;"></div>
+                <div class="createCircle">
+                    <div class="createAdd">
+                        <div class="createDot"></div>
+                        <i class="fa-solid fa-user lev"></i>
+                        <p class="lev">Add Account</p>
+                    </div>
+                    <div class="circleIn"></div>
+                </div>
+            </div>
+            <div class="createAccBox">
+                <div class="createAcc">
+                    <div class="createAccLeft">
+                        <div class="createAccLeftCont">
+                            <div class="createAccCircleCont">
+                                <label for="createUpload" class="createUploadLabel">
+                                    <div class="createAccOverlay">
+                                        <input type="file" class="createUpload" id="createUpload" accept="image/png, image/jpg, image/jpeg, image/gif">
+                                        <i class="fa-solid fa-camera"></i>
+                                        <p>Change Profile Picture</p>
+                                    </div>
+                                </label>
                             </div>
-                            <!-- <i class="fa-solid fa-user-plus"></i>
-                            <p>Create Account</p> -->
+                            <div class="createAccLeftText">
+                                <p style="height: 80px;"><span class="createBig">1</span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae ducimus num?</p>
+                                <p><span class="createBig2">2</span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae ducimus num?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="createAccRight">
+                        <i class="fa-solid fa-xmark" id="createClose"></i>
+                        <div class="createAccRightCont">
+                            <div class="createAccImg">
+                                <img src="images/office-illustration.png" width="70%">
+                            </div>
+                            <p><i class="fa-solid fa-user me-2"></i>Create An Account</p>
+                            <form>                         
+                                <label for="createEm">Your Email:</label>
+                                <input type="email" class="form-control" id="createEm" placeholder="">
+                                <label for="createPa">Set Password:</label>
+                                <div class="createPassCont">
+                                    <i class="fa-solid fa-eye createPassEye"></i> 
+                                    <input type="password" class="form-control" id="createPa">
+                                </div>
+                            </form>
+                            <button id="createAccSignUp">Sign Up</button>
+                            <div class="createSignIn">
+                                <p>Already have an account? <span>Sign In</span></p>
+                            </div>
+                        </div>
+                        <div class="createAccRightDisplay">
+                            <div class="createAccImg">
+                                <img src="images/office-illustration.png" width="70%">
+                            </div>
+                            <form>                         
+                                <label for="createFir">First Name:</label>
+                                <input type="text" class="form-control" id="createFir">
+                                <label for="createLas">Last Name:</label>
+                                <input type="text" class="form-control" id="createLas">
+                                <label for="createGen">Gender:</label>
+                                <select class="form-control" id="createGen">
+                                    <option value="">Select Gender</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                            </form>
+                            <button id="createAccFin">Finish</button>
                         </div>
                     </div>
                 </div>
+                <div class="createAccBoxLeft"></div>
             </div>
+        </div>
+        <div class="lol">
+            <div class="lolCont">
+                <div class="lolCir on"></div>
+            </div>
+            <button class="lolBtn">Start</button>
         </div>
     </body>
     <script src="bootstrap_5/jquery/jquery-3.6.0.min.js"></script>

@@ -685,3 +685,186 @@ for(let i = 0; i < naviLink.length; i++) {
 }
 
 //Create Account
+var createCircle = document.querySelector(".createCircle");
+var lev = document.querySelectorAll(".lev");
+var createDot = document.querySelector(".createDot");
+var circleIn = document.querySelector(".circleIn");
+var createAccBox = document.querySelector(".createAccBox");
+var createAcc = document.querySelector(".createAcc");
+var createClose = document.getElementById("createClose");
+
+createCircle.addEventListener("mouseover", function() {
+    createCircle.classList.add("active")
+})
+createCircle.addEventListener("mouseout", function() {
+    createCircle.classList.remove("active")
+})
+
+createCircle.addEventListener("click", function() {
+    for(let i = 0; i < lev.length; i++) {
+        lev[i].style.opacity = "0";
+    }
+    setTimeout(function() {
+        createDot.style.display = "block"
+        createDot.style.opacity = 1;
+        setTimeout(function() {
+            createDot.style.opacity ="0"
+            setTimeout(function() {
+                createDot.style.display = "none";
+                circleIn.style.transform = "scale(1)"
+                createAccBox.style.left = "0"
+                setTimeout(function() {
+                    createAcc.style.opacity = "1";
+                }, 1000)
+            }, 1000)
+        }, 1000)
+    }, 500)
+})
+
+var createEm = document.getElementById("createEm");
+var createPa = document.getElementById("createPa");
+var createAccBoxInputs = document.querySelectorAll(".createAccBox .form-control");
+createClose.addEventListener("click", createAccClose)
+function createAccClose() {
+    createAcc.style.opacity = "0";
+    setTimeout(function() {
+        createDot.style.display = "none";
+        circleIn.style.transform = "scale(0)"
+        createAccBox.style.left = "-100%"
+        setTimeout(function() {
+            for(let i = 0; i < lev.length; i++) {
+                lev[i].style.opacity = "1";
+            }
+            createAccCircleCont.style.backgroundImage = "url(images/man-300x300.png)";
+            for(let i = 0; i < createAccBoxInputs.length; i++) {
+                createAccBoxInputs[i].value = ""
+            }
+            createAccRightCont.style.opacity = "1";
+            createAccRightDisplay.style.display = "none";
+            createAccRightDisplay.style.opacity = "0"
+        }, 1000)
+    }, 1000)
+}
+
+var createUpload = document.querySelector(".createUpload");
+var createAccCircleCont = document.querySelector(".createAccCircleCont");
+var createUploaded = "";
+
+createUpload.addEventListener("change", function() {
+    const reader = new FileReader();
+    reader.addEventListener("load", function() {
+        createUploaded = reader.result;
+        createAccCircleCont.style.backgroundImage = `url(${createUploaded})`;
+    });
+    reader.readAsDataURL(this.files[0]);
+})
+
+var createPassEye = document.querySelector(".createPassEye");
+var createPa = document.getElementById("createPa");
+createPassEye.addEventListener("click", function() {
+    createPassEye.classList.toggle("fa-eye-slash")
+    createPassEye.classList.toggle("fa-eye")
+    if(createPa.type == "password") {
+        createPa.type = "text";
+    } else {
+        createPa.type = "password";
+    }
+})
+
+var createAccSignUp = document.getElementById("createAccSignUp");
+var createAccRightCont = document.querySelector(".createAccRightCont");
+var createAccRightDisplay = document.querySelector(".createAccRightDisplay");
+createAccSignUp.addEventListener("click", function() {
+    if(createEm.value.length < 1) {
+        createEm.style.border = "1px solid red"
+        createEm.placeholder = "Insert An Email"
+        return setTimeout(function() {
+            createEm.style.border = "1px solid #ced4da"
+            createEm.placeholder = "";
+        }, 2000)
+    }
+    if(createPa.value.length < 1) {
+        createPa.style.border = "1px solid red"
+        createPa.placeholder = "Insert Password"
+        return setTimeout(function() {
+            createPa.style.border = "1px solid #ced4da"
+            createPa.placeholder = "";
+        }, 2000)
+    }
+    createAccSignUp.innerHTML = '<span class="spinner-border spinner-border-sm"></span>';
+    setTimeout(function() {
+        createAccRightCont.style.opacity = "0"
+        createAccRightDisplay.style.display = "block"
+        setTimeout(function() {
+            createAccRightDisplay.style.opacity = "1"
+            createAccSignUp.innerHTML = "Sign Up";
+        }, 500)
+    }, 500)
+})
+
+createEm.addEventListener("blur", function() {
+    let email = createEm.value;
+    if(email.includes("@gmail.com") || email.includes("@yahoo.com") || email.includes("@outlook.com")) {
+        let yes = true;
+    }else {
+        createEm.value = email += "@gmail.com";
+    }
+})
+
+var createAccFin = document.getElementById("createAccFin");
+var createAccInputs = document.querySelectorAll(".createAccRightDisplay .form-control");
+createAccFin.addEventListener("click", function() {
+    var createNum = 0;
+    for(let i = 0; i < createAccInputs.length; i++) {
+        if(createAccInputs[i].value < 1) {
+            createAccInputs[i].style.border = "1px solid red";
+            createNum++
+        }
+    }
+   if(createNum > 0) {
+    setTimeout(function() {
+        for(let i = 0; i < createAccInputs.length; i++) {
+            if(createAccInputs[i].value < 1) {
+                createAccInputs[i].style.border = "1px solid #ced4da";
+            }
+        }
+    }, 2000)
+   } else {
+        createAccFin.innerHTML = '<span class="spinner-border spinner-border-sm"></span>';
+        setTimeout(() => {
+            createAccClose();
+            createAccFin.innerHTML = "Finish";
+        }, 1000);
+   }
+})
+
+for(let i = 0; i < createAccBoxInputs.length; i++) {
+    createAccBoxInputs[i].addEventListener("click", function(e) {
+        e.target.style.border = "1px solid blueviolet";
+    })
+    createAccBoxInputs[i].addEventListener("blur", function(e) {
+        e.target.style.border = "1px solid #ced4da";
+    })
+}
+var lolBtn = document.querySelector(".lolBtn");
+var lolCont = document.querySelector(".lolCont");
+lolBtn.addEventListener("click", function() {
+    var lolCir = document.querySelectorAll(".lolCir");
+    if(lolCir.length < 3) {
+        var div = document.createElement("div");
+        div.classList.add("lolCir")
+        lolCont.insertBefore(div, lolCir[0]);
+        setTimeout(function() {
+            div.classList.add("on");
+        }, 1000)
+    }else{
+        for(let i = 0; i < lolCir.length; i++) {
+            lolCir[i].style.border = "2px solid red";
+        }
+        setTimeout(function() {
+            for(let i = 0; i < lolCir.length; i++) {
+                lolCir[i].style.border = "1px solid gray";
+            }
+        }, 1000)
+    }
+})
